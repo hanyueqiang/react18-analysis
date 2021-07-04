@@ -5,10 +5,18 @@ import './index.css';
 import ReactDom from './qreact/react-dom'
 import reportWebVitals from './reportWebVitals';
 
+function FunctionComp(props) {
+  return (
+    <div className="border">
+      <p>{props.name}</p>
+    </div>
+  )
+}
 const jsx = (
   <div>
     <h1>hello world</h1>
     <a href="http://www.baidu.com">ddddddd</a>
+    <FunctionComp name="函数" />
   </div>
 )
 
