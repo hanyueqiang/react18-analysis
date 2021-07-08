@@ -2,11 +2,12 @@ import { scheduleUpdateOnFiber } from './reactFiberWorkLoop'
 
 function render(vnode, container) {
     console.log(vnode)
+    console.log(container)
     // 1.vnode -> node
     // const node = createNode(vnode)
     // // 2.node更新到container
     // container.appendChild(node)
-    // 构建根节点container
+    // 构建根节点 container
     const fiberRoot = {
         type: container.nodeName.toLocaleLowerCase(),
         stateNode: container,

@@ -3,6 +3,9 @@
 import './index.css';
 // import App from './App';
 import ReactDom from './qreact/react-dom'
+// 用react写一个模板引擎,只考虑原生标签 /hreact
+// import ReactDom from './hreact/react-dom'
+
 import reportWebVitals from './reportWebVitals';
 
 function FunctionComp(props) {
@@ -14,9 +17,9 @@ function FunctionComp(props) {
 }
 const jsx = (
   <div>
-    <h1>hello world</h1>
-    <a href="http://www.baidu.com">ddddddd</a>
-    <FunctionComp name="函数" />
+    <h1>React 模板引擎</h1>
+    <a href="http://www.baidu.com">百度一下</a>
+    <FunctionComp name="function组件" />
   </div>
 )
 
